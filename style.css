@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* THE START OF GENERAL STYLING */
+:root {
+    --main-color: #f44336;
+    --header-color: #f44336;
+    --line-color: #ff0000;
+}
+
+.container {
+    width: 80%;
+    margin-left: 20%;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container h1{
+    font-size: 64px;
+    margin: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+/* THE END OF GENERAL STYLING */
+
+/* THE START OF HEADING STYLING */
+.heading {
+    color: var(--header-color);
+    font-size: 48px;
+    margin: 10px 0px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.heading::after {
+    content: "";
+    width: 60px;
+    height: 10px;
+    background-color: var(--line-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+/* THE END OF HEADING STYLING */
+body {
+    height: 2000px;
+}
+/* THE START OF NAV STYLING */
+nav {
+    width: 20%;
+    height: 100vh;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav h2 {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 24px;
+    
+}
+
+.nav-link{
+    color: #ffffff;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+
+nav ul li {
+    margin: 15px 0;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    display: inline-block;
+    background-size: 0% ;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+    width: 220px;
+    text-decoration: none;
+    text-align: left;
+
+    
+
+}
+
+nav ul li a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* THE END OF NAV STYLING */
+
+
+/* THE START OF SHOWCASE STYLING */
+
+.cards {
+    clear: both;
+    padding-top: 40px;
+}
+
+.card {
+    height: 400px;
+    width: 48%;
+    margin-right: 2%;
+    margin-top: 1%;
+    float: left;
+    position: relative;
+}
+
+.last-card {
+    margin-right: 0%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.half-width{
+    height: 300px;
+}
+
+.image-3{
+    margin-left: 2%;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 234, 234, 0.2);
+    opacity: 1;
+    transition:  0.5s ;
+}
+
+.card:hover .layer {
+    opacity: 0;
+}
+
+.clr {
+    clear: both;
+}
+
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+/* THE END OF SHOWCASE STYLING */
+
+/* THE START OF SERVICES STYLING */
+
+.header {
+    margin-top: 40px;
+}
+
+.highlight {
+    font-size: 18px;
+    margin: 30px 0 15px 0;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 18px;
+    
+    color: #333;
+}
+
+/* THE end OF SERVICES STYLING */
+
+
+/* THE START OF designer STYLING */
+
+.header {
+    margin-top: 40px;
+}
+
+
+
+
+
+
+.bold-line{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+
+
+
+.designers-cards{
+    padding: 20px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+
+.designers-cards::after {
+    content: "";
+    display: table;
+    position: absolute;
+    clear: both;
+}
+
+
+.designer-card {
+    float: left;
+    width: 31%;
+    padding: 15px;
+    text-align: left;
+    background-color: #979494;
+    margin-right: 20px;
+}
+
+
+.designer-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+.designer-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0px 5px 0;
+    font-weight: 500;
+    
+
+}
+
+
+.designer-card .job {
+    color: #cecbcb;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+.designer-card .bio {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+/* THE end OF designer STYLING */
+
+
+
+/* THE START OF package STYLING */
+
+
+
+.pricing-table {
+    
+    /* display: block; */
+    
+    width: 800px;
+    margin: 40px 0 40px 200px;
+    font-family : sans-serif;
+    text-align : center;
+    clear: both;
+}
+
+.pricing-table th, .pricing-table td {
+    background-color: #aaaaaa;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+
+.pricing-table th {
+    padding: 25px;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-top: 1px solid #e0e0e0;
+    background-color: #333;
+}
+
+.basic-header{
+    background-color: #0b0c0c;
+    color: rgb(0, 0, 0);
+
+}
+
+.pro-header {
+    background-color: #f44336;
+}
+
+.pricing-table td {
+    padding: 20px;
+    color: #666;
+    font-size: 16px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.price-row td {
+    padding: 30px 20px 15px 20px;
+    border-bottom: none;
+}
+
+.price-row .amount {
+    display: block;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.price-row .duration {
+    font-size: 14px;
+    color: #888;
+}
+
+.footer-row td {
+    padding: 20px 20px 30px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-row a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+}
+
+.btn-basic {
+    color: #020202;
+    background-color: white;
+}
+
+.btn-pro {
+    background-color: #f44336;
+    color: white;
+}
+
+/* THE end OF package STYLING */
+
+
+/* THE START OF contact STYLING */
+.inputs-names{
+    font-size: 20px;
+}
+
+.inputs{
+    display: block;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    background-color: #f44336;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+}
+
+button:hover{
+    background-color: #8d8b8b;
+    color: #000000;
+}
+
+/* THE end OF contact STYLING */
+
+
+/* THE START OF footer STYLING */
+
+.footers{
+    background-color: #f1f1f1;
+    padding: 32px 16px;
+    text-align: right;
+    color: black;
+    margin-left: 300px;
+}
+
+.footers p{
+    font-size: 18px;
+    color: #000;
+
+}
+
+.footers a{
+    color: #000;
+}
+
+.footers a:hover{
+    color: #6b6969;
+}
